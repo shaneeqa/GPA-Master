@@ -1,0 +1,10 @@
+test1,2,3,2,3,3,3.32,3.34,2.34,Java,test1,SecondUpper
+test2,1,3,4,1,5,2.44,3.22,2.98,Java,test2,SecondLower
+test3,2,3,1,2,0,3.12,2.34,2.71,Java,test3,SecondLower
+test4,1,3,1,1,1,1.32,2.34,2.21,CSharp,test4,GeneralPass
+test5,2,3,2,3,2,2.52,2.34,2.51,Java,test5,GeneralPass
+test6,2,3,2,3,3,2.32,3.34,3.01,NoSQL,test6,SecondLower
+test7,2,3,4,1,5,3.44,3.22,3.58,Java,test7,SecondUpper
+test8,3,5,5,3,12,3.72,3.84,3.81,CSharp,test8,FirstClass
+test9,2,3,1,1,0,1.32,1.34,1.78,Java,test9,GeneralPass
+test10,2,3,2,2,2,2.32,2.84,2.61,Java,test10,GeneralPass

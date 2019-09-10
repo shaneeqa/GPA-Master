@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>GPA Output</title>
+
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>
+    <link href="../static/css/styles.css" rel="stylesheet" th:href="@{/css/styles.css}"/>
+    <link href="../static/css/stylesheet.css" rel="stylesheet" th:href="@{/css/stylesheet.css}"/>
+    <link href="../static/css/fontawesome-all.css" rel="stylesheet" th:href="@{/css/fontawesome-all.css}"/>
+    <link href="../static/css/inputmask.css" rel="stylesheet" th:href="@{/css/inputmask.css}"/>
+
+</head>
+
+<body>
+<div class="dashboard-main-wrapper">
+    <!-- navbar -->
+    <div class="dashboard-header">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+            <a class="navbar-brand" href="">GPA Master</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+    <!--end navbar -->
+
+    <!-- left sidebar -->
+    <div class="nav-left-sidebar sidebar-dark">
+        <div class="menu-list">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">User Submission</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Administrator</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- end left sidebar -->
+    <!-- wrapper  -->
+    <div class="dashboard-wrapper">
+        <div class="container-fluid dashboard-content">
+            <div class="alert alert-primary" role="alert">
+                Entered record for [[${regNo}]]
+                <!--Your final GPA will be <b>[[${gpaValue}]]</b>-->
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="text-md-right footer-links d-none d-sm-block">
+                        Project for University of Vocational Technology
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end footer -->
+</div>
+</body>
+</html>

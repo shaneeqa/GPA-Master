@@ -1,0 +1,7 @@
+com\gpa\web\Application.class
+com\gpa\web\constants\URLConstants$Redirects.class
+com\gpa\web\constants\FileConstraints.class
+com\gpa\web\constants\URLConstants$URLs.class
+com\gpa\web\constants\URLConstants.class
+com\gpa\web\controller\IndexController.class
+com\gpa\web\constants\URLConstants$Views.class

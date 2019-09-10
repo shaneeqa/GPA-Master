@@ -1,0 +1,22 @@
+<TextFileConfiguration>
+	<FilePath>F:\GITHUB\GPAMaster\all\engine\src\main\resources\cases.csv</FilePath>
+	<Delimiters>,</Delimiters>
+	<DescriptionClassName>com.gpa.engine.jcollibri.GpaDescription</DescriptionClassName>
+	<DescriptionMappings>
+		<Map>priorKnowledge</Map>
+		<Map>hoursOfWeeklyStudyI</Map>
+		<Map>hoursOfWeeklyStudyII</Map>
+		<Map>interactionWithLecturer</Map>
+		<Map>developedProjects</Map>
+		<Map>gpaYearI</Map>
+		<Map>gpaYearII</Map>
+		<Map>finalGpa</Map>
+		<Map>preferredArea</Map>
+	</DescriptionMappings>
+	
+	<SolutionClassName>com.gpa.engine.jcollibri.GpaSolution</SolutionClassName>
+	<SolutionMappings>
+		<Map>id</Map>
+		<Map>fix</Map>
+	</SolutionMappings>
+</TextFileConfiguration>
