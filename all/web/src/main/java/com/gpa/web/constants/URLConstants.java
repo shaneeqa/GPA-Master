@@ -12,13 +12,17 @@ public class URLConstants {
 
         public static final String TEST = "/test";
 
-        public static final String SAVE = "/save";
+        public static final String CHECK_CASE = "/checkcase";
 
         public static final String SAVE_CASE = "/list";
 
         public static final String ADMIN = "/admin";
 
+        public static final String LOG_IN = "/login";
+
         public static final String STUDENT = "/student";
+
+        public static final String NEW_CASE = "/newcase";
 
         private URLs() {
         }
@@ -35,7 +39,11 @@ public class URLConstants {
 
         public static final String ADMIN = "admin";
 
+        public static final String LOG_IN = "login";
+
         public static final String STUDENT = "student";
+
+        public static final String NEW_CASE = "newcase";
 
         private Views() {
         }
@@ -50,9 +58,13 @@ public class URLConstants {
 
         public static final String ADMIN = REDIRECT + URLs.ADMIN;
 
+        public static final String LOG_IN = REDIRECT + URLs.LOG_IN;
+
         public static final String STUDENT = REDIRECT + URLs.STUDENT;
 
         public static final String SAVE_CASE = REDIRECT + URLs.SAVE_CASE;
+
+        public static final String NEW_CASE = REDIRECT + URLs.NEW_CASE;
 
         private Redirects() {
         }

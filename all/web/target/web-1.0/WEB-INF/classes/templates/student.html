@@ -16,7 +16,7 @@
     <div class="dashboard-main-wrapper">
         <!-- navbar -->
         <div class="dashboard-header">
-            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+            <nav class="navbar navbar-expand-lg bg-dark fixed-top">
                 <a class="navbar-brand" href="">GPA Master</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -38,7 +38,7 @@
                                 <a class="nav-link" th:href="@{/student}">User Submission</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" th:href="@{/admin}">Administrator</a>
+                                <a class="nav-link" th:href="@{/newcase}">Administrator</a>
                             </li>
                         </ul>
                     </div>
@@ -50,7 +50,7 @@
         <div class="dashboard-wrapper">
             <div class="container-fluid dashboard-content">
                 <div class="row">
-                    <div class="col-xl-10">
+                    <div class="col-xl-12">
                         <!-- pageheader  -->
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -62,7 +62,7 @@
                                 <div class="card">
                                     <h5 class="card-header">Query</h5>
                                     <div class="card-body">
-                                        <form th:action="@{${T(com.gpa.web.constants.URLConstants.URLs).SAVE}}" method="post" id="validationform" data-parsley-validate="" novalidate="">
+                                        <form th:action="@{${T(com.gpa.web.constants.URLConstants.URLs).CHECK_CASE}}" method="post" id="validationform" data-parsley-validate="" novalidate="">
 
                                             <div class="form-group row">
                                                 <label class="col-sm-3 col-form-label text-sm-right">Select year</label>
@@ -185,7 +185,6 @@
                                             <div class="form-group row text-right">
                                                 <div class="col col-sm-10 col-lg-9 offset-sm-1 offset-lg-0">
                                                     <button type="submit" class="btn btn-space btn-primary">Submit</button>
-                                                    <button class="btn btn-space btn-brand">Cancel</button>
                                                     <button type="reset" class="btn btn-danger btn-space">Reset</button>
                                                 </div>
                                             </div>

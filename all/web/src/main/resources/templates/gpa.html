@@ -22,7 +22,7 @@
 <div class="dashboard-main-wrapper">
     <!-- navbar -->
     <div class="dashboard-header">
-        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <nav class="navbar navbar-expand-lg bg-dark fixed-top">
             <a class="navbar-brand" href="">GPA Master</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -38,13 +38,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="">Home</a>
+                            <a class="nav-link" th:href="@{/}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">User Submission</a>
+                            <a class="nav-link" th:href="@{/student}">User Submission</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Administrator</a>
+                            <a class="nav-link" th:href="@{/newcase}">Administrator</a>
                         </li>
                     </ul>
                 </div>
@@ -55,8 +55,21 @@
     <!-- wrapper  -->
     <div class="dashboard-wrapper">
         <div class="container-fluid dashboard-content">
-            <div class="alert alert-primary" role="alert">
-                Your final GPA will be <b>[[${gpaValue}]]</b>
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            Final GPA
+                        </div>
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>Your Final GPA will be <b style="color: #005cbf">[[${gpaValue}]]</b></p>
+                            </blockquote>
+
+                            <a th:href="@{/student}" class="btn btn-success">Check for another Entry</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

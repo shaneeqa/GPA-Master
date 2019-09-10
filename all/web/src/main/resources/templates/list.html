@@ -22,7 +22,7 @@
 <div class="dashboard-main-wrapper">
     <!-- navbar -->
     <div class="dashboard-header">
-        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <nav class="navbar navbar-expand-lg bg-dark fixed-top">
             <a class="navbar-brand" href="">GPA Master</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
     <!--end navbar -->
 
     <!-- left sidebar -->
-    <div class="nav-left-sidebar sidebar-dark">
+    <div class="nav-left-sidebar sidebar">
         <div class="menu-list">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -55,9 +55,20 @@
     <!-- wrapper  -->
     <div class="dashboard-wrapper">
         <div class="container-fluid dashboard-content">
-            <div class="alert alert-primary" role="alert">
-                Entered record for [[${regNo}]]
-                <!--Your final PREDICTED will be <b>[[${gpaValue}]]</b>-->
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            Final GPA
+                        </div>
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>You've Entered record for <b style="color: #005cbf">[[${regNo}]]</b></p>
+                            </blockquote>
+                            <a th:href="@{/newcase}" class="btn btn-primary">Enter another case</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

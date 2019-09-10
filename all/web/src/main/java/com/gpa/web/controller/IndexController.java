@@ -27,19 +27,14 @@ import static com.gpa.web.constants.FileConstraints.OUT_CSV_FILE_PATH;
 public class IndexController {
 
 
-
-
-    /*@Autowired
-    private StudentService studentService;*/
-
     @RequestMapping(value = URLConstants.URLs.INDEX)
     public String index() {
         return URLConstants.Views.INDEX;
     }
 
-    @RequestMapping(value = URLConstants.URLs.ADMIN)
-    public String admin() {
-        return URLConstants.Views.ADMIN;
+    @RequestMapping(value = URLConstants.URLs.NEW_CASE)
+    public String newCase() {
+        return URLConstants.Views.NEW_CASE;
     }
 
     @RequestMapping(value = URLConstants.URLs.STUDENT)
@@ -53,16 +48,33 @@ public class IndexController {
         return URLConstants.Views.PREDICTED;
     }
 
-    @RequestMapping(value = URLConstants.URLs.SAVE_CASE)
+    @GetMapping(value = URLConstants.URLs.SAVE_CASE)
     public String list(@RequestParam String regNo, Model model) {
         model.addAttribute("regNo", regNo);
         return URLConstants.Views.SAVED_CASES;
     }
 
-    @PostMapping(value = URLConstants.URLs.SAVE)
+    private static final String ALPHA_NUMERIC_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+    public static String randomAlphaNumeric(int count) {
+
+        StringBuilder builder = new StringBuilder();
+
+        while (count-- != 0) {
+
+            int character = (int)(Math.random()*ALPHA_NUMERIC_STRING.length());
+
+            builder.append(ALPHA_NUMERIC_STRING.charAt(character));
+
+        }
+
+        return builder.toString();
+
+    }
+
+    @PostMapping(value = URLConstants.URLs.CHECK_CASE)
     public String studentCase(StudentDTO studentDTO){
         Student studentCase = new Student();
-        studentCase.setRegistrationNumber(studentDTO.getRegistrationNumber());
         studentCase.setPriorKnowledge(studentDTO.getPriorKnowledge());
         studentCase.setHoursOfWeeklyStudyI(studentDTO.getHoursOfWeeklyStudyI());
         studentCase.setHoursOfWeeklyStudyII(studentDTO.getHoursOfWeeklyStudyII());
@@ -70,7 +82,6 @@ public class IndexController {
         studentCase.setGPAYearI(studentDTO.getGpaYearI());
         studentCase.setGPAYearII(studentDTO.getGpaYearII());
         studentCase.setDevelopedProjects(studentDTO.getDevelopedProjects());
-//        studentService.save(studentCase);
         String gpa = null;
         try {
             gpa = getSavedGpa(studentDTO);
@@ -93,7 +104,6 @@ public class IndexController {
         studentCase.setGPAYearII(studentDTO.getGpaYearII());
         studentCase.setFinalGpa(studentDTO.getFinalGpa());
         studentCase.setDevelopedProjects(studentDTO.getDevelopedProjects());
-        //studentService.save(studentCase);
 
         CSVWriter csvWriter = null;
         try {
@@ -146,7 +156,8 @@ public class IndexController {
         callJcollibri(studentDTO);
         String[] nextRecord;
 
-        String id ="", finalGpa;
+//get solution GPA from csv file
+        String id ="";
         try (
                 Reader reader = Files.newBufferedReader(Paths.get(OUT_CSV_FILE_PATH));
                 CSVReader csvReader = new CSVReader(reader);
@@ -155,15 +166,10 @@ public class IndexController {
 
             while ((nextRecord = csvReader.readNext()) != null) {
                 id = nextRecord[0];
-//                System.out.println("Name : " + nextRecord[0]);
-//                System.out.println("Email : " + nextRecord[1]);
-//                System.out.println("Phone : " + nextRecord[2]);
-//                System.out.println("Country : " + nextRecord[3]);
-//                System.out.println("==========================");
             }
         }
         return id; //to show in the view html
-        //get it from csv file
+
 
     }
 
@@ -196,9 +202,7 @@ public class IndexController {
 
         } catch (Exception e)
         {
-            //org.apache.commons.logging.LogFactory.getLog(Gpa.class).error(e);
             e.printStackTrace();
-
         }
     }
 }
