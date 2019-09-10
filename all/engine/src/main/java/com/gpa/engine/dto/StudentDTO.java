@@ -2,10 +2,10 @@ package com.gpa.engine.dto;
 
 public class StudentDTO {
     private String registrationNumber;
-    private Integer priorKnowledge;
-    private Integer hoursOfWeeklyStudyI;
-    private Integer hoursOfWeeklyStudyII;
-    private Integer interactionWithLecturer;
+    private String priorKnowledge;
+    private String hoursOfWeeklyStudyI;
+    private String hoursOfWeeklyStudyII;
+    private String interactionWithLecturer;
     private Double gpaYearI;
     private Double gpaYearII;
     private Double finalGpa;
@@ -22,35 +22,35 @@ public class StudentDTO {
         this.registrationNumber = registrationNumber;
     }
 
-    public Integer getPriorKnowledge() {
+    public String getPriorKnowledge() {
         return priorKnowledge;
     }
 
-    public void setPriorKnowledge(Integer priorKnowledge) {
+    public void setPriorKnowledge(String priorKnowledge) {
         this.priorKnowledge = priorKnowledge;
     }
 
-    public Integer getHoursOfWeeklyStudyI() {
+    public String getHoursOfWeeklyStudyI() {
         return hoursOfWeeklyStudyI;
     }
 
-    public void setHoursOfWeeklyStudyI(Integer hoursOfWeeklyStudyI) {
+    public void setHoursOfWeeklyStudyI(String hoursOfWeeklyStudyI) {
         this.hoursOfWeeklyStudyI = hoursOfWeeklyStudyI;
     }
 
-    public Integer getHoursOfWeeklyStudyII() {
+    public String getHoursOfWeeklyStudyII() {
         return hoursOfWeeklyStudyII;
     }
 
-    public void setHoursOfWeeklyStudyII(Integer hoursOfWeeklyStudyII) {
+    public void setHoursOfWeeklyStudyII(String hoursOfWeeklyStudyII) {
         this.hoursOfWeeklyStudyII = hoursOfWeeklyStudyII;
     }
 
-    public Integer getInteractionWithLecturer() {
+    public String getInteractionWithLecturer() {
         return interactionWithLecturer;
     }
 
-    public void setInteractionWithLecturer(Integer interactionWithLecturer) {
+    public void setInteractionWithLecturer(String interactionWithLecturer) {
         this.interactionWithLecturer = interactionWithLecturer;
     }
 

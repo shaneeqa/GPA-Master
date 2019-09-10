@@ -10,13 +10,13 @@ public class Student {
     @Column(name = "registrationNumber")
     String registrationNumber;
     @Column(name = "priorKnowledge")
-    Integer priorKnowledge;
+    String priorKnowledge;
     @Column(name = "hoursOfWeeklyStudyI")
-    Integer hoursOfWeeklyStudyI;
+    String hoursOfWeeklyStudyI;
     @Column(name = "hoursOfWeeklyStudyII")
-    Integer hoursOfWeeklyStudyII;
+    String hoursOfWeeklyStudyII;
     @Column(name = "interactionWithLecturer")
-    Integer interactionWithLecturer;
+    String interactionWithLecturer;
     @Column(name = "gpaYearI")
     Double gpaYearI;
     @Column(name = "gpaYearII")
@@ -34,35 +34,35 @@ public class Student {
         this.registrationNumber = registrationNumber;
     }
 
-    public Integer getPriorKnowledge() {
+    public String getPriorKnowledge() {
         return priorKnowledge;
     }
 
-    public void setPriorKnowledge(Integer priorKnowledge) {
+    public void setPriorKnowledge(String priorKnowledge) {
         this.priorKnowledge = priorKnowledge;
     }
 
-    public Integer getHoursOfWeeklyStudyI() {
+    public String getHoursOfWeeklyStudyI() {
         return hoursOfWeeklyStudyI;
     }
 
-    public void setHoursOfWeeklyStudyI(Integer hoursOfWeeklyStudyI) {
+    public void setHoursOfWeeklyStudyI(String hoursOfWeeklyStudyI) {
         this.hoursOfWeeklyStudyI = hoursOfWeeklyStudyI;
     }
 
-    public Integer getHoursOfWeeklyStudyII() {
+    public String getHoursOfWeeklyStudyII() {
         return hoursOfWeeklyStudyII;
     }
 
-    public void setHoursOfWeeklyStudyII(Integer hoursOfWeeklyStudyII) {
+    public void setHoursOfWeeklyStudyII(String hoursOfWeeklyStudyII) {
         this.hoursOfWeeklyStudyII = hoursOfWeeklyStudyII;
     }
 
-    public Integer getInteractionWithLecturer() {
+    public String getInteractionWithLecturer() {
         return interactionWithLecturer;
     }
 
-    public void setInteractionWithLecturer(Integer interactionWithLecturer) {
+    public void setInteractionWithLecturer(String interactionWithLecturer) {
         this.interactionWithLecturer = interactionWithLecturer;
     }
 

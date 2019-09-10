@@ -103,15 +103,16 @@ public class IndexController {
         }
 
         String regNo = studentCase.getRegistrationNumber();
-        String priorKnowledge = "2";//studentCase.getPriorKnowledge().toString();
-        String hoursI = "2";//studentCase.getHoursOfWeeklyStudyI().toString();
-        String hoursII = "";//studentCase.getHoursOfWeeklyStudyII().toString();
-        String gpaI = "2";//studentCase.getGPAYearI().toString();
-        String gpaII = "";//studentCase.getGPAYearII().toString();
-        String devProjects = "2";//studentCase.getDevelopedProjects().toString();
-        String interactionLecturer = "2";//studentCase.getInteractionWithLecturer().toString();
-        String finalGpa = "2";//studentCase.getFinalGpa().toString();
+        String priorKnowledge = studentCase.getPriorKnowledge().toString();
+        String hoursI = studentCase.getHoursOfWeeklyStudyI().toString();
+        String hoursII = studentCase.getHoursOfWeeklyStudyII().toString();
+        String gpaI = studentCase.getGPAYearI().toString();
+        String gpaII = studentCase.getGPAYearII().toString();
+        String devProjects = studentCase.getDevelopedProjects().toString();
+        String interactionLecturer = studentCase.getInteractionWithLecturer().toString();
+        String finalGpa = studentCase.getFinalGpa().toString();
         String newLine = "\n";//studentCase.getFinalGpa().toString();
+
         String[] records = {regNo, priorKnowledge, hoursI, hoursII, interactionLecturer, devProjects, gpaI, gpaII,  finalGpa};
         csvWriter.writeNext(records, false);
         try {
