@@ -29,7 +29,7 @@ import es.ucm.fdi.gaia.ontobridge.OntologyDocument;
 
 public class Gpa implements StandardCBRApplication
 {
-	private static final String OUT_CSV_FILE_PATH = "F:/GITHUB/GPAMaster/all/engine/src/main/resources/out.csv";
+	private static final String OUT_CSV_FILE_PATH = "F:/GITHUB/UnivoProject/all/engine/src/main/resources/out.csv";
 
 	// add database here
 
@@ -47,7 +47,7 @@ public class Gpa implements StandardCBRApplication
 	_connector = new PlainTextConnector();
 	// Init the ddbb connector with the config file
 	_connector.initFromXMLfile(es.ucm.fdi.gaia.jcolibri.util.FileIO
-			.findFile("../resources/jcollibriconfig.xml"));
+			.findFile("F:/GITHUB/UnivoProject/all/engine/src/main/resources/jcollibriconfig.xml"));
 	// Create a Lineal case base for in-memory organization
 	_caseBase = new LinealCaseBase();
 
@@ -57,7 +57,7 @@ public class Gpa implements StandardCBRApplication
 		ob.initWithPelletReasoner();
 		// Setup the main ontology
 		OntologyDocument mainOnto = new OntologyDocument("http://gaia.fdi.ucm.es/ontologies/gpa.owl",
-				FileIO.findFile("../resources/gpa.owl").toExternalForm());
+				FileIO.findFile("F:/GITHUB/UnivoProject/all/engine/src/main/resources/gpa.owl").toExternalForm());
 		// There are not subontologies
 		ArrayList<OntologyDocument> subOntologies = new ArrayList<OntologyDocument>();
 		// Load the ontology

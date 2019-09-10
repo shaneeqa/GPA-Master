@@ -1,5 +1,7 @@
 package com.gpa.engine.model;
 
+import es.ucm.fdi.gaia.jcolibri.datatypes.Instance;
+
 import javax.persistence.*;
 
 @Entity
@@ -25,6 +27,8 @@ public class Student {
     Double finalGpa;
     @Column(name = "developedProjects")
     Integer developedProjects;
+    @Column(name = "preferredArea")
+    String preferredArea;
 
     public String getRegistrationNumber() {
         return registrationNumber;
@@ -96,5 +100,13 @@ public class Student {
 
     public void setDevelopedProjects(Integer developedProjects) {
         this.developedProjects = developedProjects;
+    }
+
+    public String getPreferredArea() {
+        return preferredArea;
+    }
+
+    public void setPreferredArea(String preferredArea) {
+        this.preferredArea = preferredArea;
     }
 }

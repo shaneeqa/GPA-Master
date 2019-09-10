@@ -1,5 +1,7 @@
 package com.gpa.engine.dto;
 
+import es.ucm.fdi.gaia.jcolibri.datatypes.Instance;
+
 public class StudentDTO {
     private String registrationNumber;
     private String priorKnowledge;
@@ -10,6 +12,7 @@ public class StudentDTO {
     private Double gpaYearII;
     private Double finalGpa;
     private Integer developedProjects;
+    private String preferredArea;
 
     public StudentDTO() {
     }
@@ -86,18 +89,30 @@ public class StudentDTO {
         this.developedProjects = developedProjects;
     }
 
+    public String getPreferredArea() {
+        return preferredArea;
+    }
+
+    public void setPreferredArea(String preferredArea) {
+        this.preferredArea = preferredArea;
+    }
+
     @Override
     public String toString() {
         return "StudentDTO{" +
-                "registrationNumber='" + registrationNumber +
-                ", priorKnowledge=" + priorKnowledge +
-                ", hoursOfWeeklyStudyI=" + hoursOfWeeklyStudyI +
-                ", hoursOfWeeklyStudyII=" + hoursOfWeeklyStudyII +
-                ", interactionWithLecturer=" + interactionWithLecturer +
+                "registrationNumber='" + registrationNumber + '\'' +
+                ", priorKnowledge='" + priorKnowledge + '\'' +
+                ", hoursOfWeeklyStudyI='" + hoursOfWeeklyStudyI + '\'' +
+                ", hoursOfWeeklyStudyII='" + hoursOfWeeklyStudyII + '\'' +
+                ", interactionWithLecturer='" + interactionWithLecturer + '\'' +
                 ", gpaYearI=" + gpaYearI +
                 ", gpaYearII=" + gpaYearII +
                 ", finalGpa=" + finalGpa +
                 ", developedProjects=" + developedProjects +
+                ", preferredArea=" + preferredArea +
                 '}';
     }
+
+
+
 }

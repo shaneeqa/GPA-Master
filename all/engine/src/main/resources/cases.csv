@@ -7,4 +7,7 @@ test6,2,3,2,3,3,2.32,3.34,3.01,NoSQL,test6,SecondLower
 test7,2,3,4,1,5,3.44,3.22,3.58,Java,test7,SecondUpper
 test8,3,5,5,3,12,3.72,3.84,3.81,CSharp,test8,FirstClass
 test9,2,3,1,1,0,1.32,1.34,1.78,Java,test9,GeneralPass
-test10,2,3,2,2,2,2.32,2.84,2.61,Java,test10,GeneralPasstestData,Took ICT as a subject in G.C.E. Advanced Level,Less than 7 hours,Less than 7 hours,Attend classes without fail and clear doubts in the related subject ny asking questions to the respective lecturers,4,3.0,3.0,3.22
+test10,2,3,2,2,2,2.32,2.84,2.61,Java,test10,GeneralPass
+testData,Took ICT as a subject in G.C.E. Advanced Level,Less than 7 hours,Less than 7 hours,Attend classes without fail and clear doubts in the related subject ny asking questions to the respective lecturers,4,3.0,3.0,3.22
+noSelect,,Less than 7 hours,Less than 7 hours,",",4,1.23,2.23,3.22
+adminSave,Took ICT as a subject in G.C.E. Advanced Level,15 to 21 hours,8 to 14 hours,"Just attend the class and do practicals and assignments, no interaction with lecturers",3,4.0,4.0,4.0,,adminSave,First Class

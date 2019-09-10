@@ -103,17 +103,34 @@ public class IndexController {
         }
 
         String regNo = studentCase.getRegistrationNumber();
-        String priorKnowledge = studentCase.getPriorKnowledge().toString();
-        String hoursI = studentCase.getHoursOfWeeklyStudyI().toString();
-        String hoursII = studentCase.getHoursOfWeeklyStudyII().toString();
+        String priorKnowledge = studentCase.getPriorKnowledge();
+        String hoursI = studentCase.getHoursOfWeeklyStudyI();
+        String hoursII = studentCase.getHoursOfWeeklyStudyII();
         String gpaI = studentCase.getGPAYearI().toString();
         String gpaII = studentCase.getGPAYearII().toString();
         String devProjects = studentCase.getDevelopedProjects().toString();
-        String interactionLecturer = studentCase.getInteractionWithLecturer().toString();
+        String interactionLecturer = studentCase.getInteractionWithLecturer();
         String finalGpa = studentCase.getFinalGpa().toString();
-        String newLine = "\n";//studentCase.getFinalGpa().toString();
+        String preferredArea = studentCase.getPreferredArea();
+        String gpaClass = "";
 
-        String[] records = {regNo, priorKnowledge, hoursI, hoursII, interactionLecturer, devProjects, gpaI, gpaII,  finalGpa};
+        if(studentCase.getFinalGpa() <= 4.0){
+            gpaClass = "First Class";
+        }
+        else if(studentCase.getFinalGpa() < 3.7 && studentCase.getFinalGpa() >= 3.3){
+            gpaClass = "Second Class Upper";
+        }
+        else if(studentCase.getFinalGpa() < 3.3 && studentCase.getFinalGpa() >= 2.7){
+            gpaClass = "Second Class Lower";
+        }
+        else if(studentCase.getFinalGpa() < 2.7 && studentCase.getFinalGpa() >= 2.0){
+            gpaClass = "General Pass";
+        }
+        else if (studentCase.getFinalGpa() < 2.0 && studentCase.getFinalGpa() >= 0.0){
+            gpaClass = "Fail";
+        }
+
+        String[] records = {regNo, priorKnowledge, hoursI, hoursII, interactionLecturer, devProjects, gpaI, gpaII,  finalGpa, preferredArea, regNo, gpaClass};
         csvWriter.writeNext(records, false);
         try {
             csvWriter.close();
@@ -170,7 +187,7 @@ public class IndexController {
             hd.setGpaYearI(studentDTO.getGpaYearI());
             hd.setGpaYearII(studentDTO.getGpaYearII());
             hd.setInteractionWithLecturer(studentDTO.getInteractionWithLecturer());
-            hd.setPreferredArea(new Instance("Oracle"));
+            hd.setPreferredArea(new Instance(studentDTO.getPreferredArea()));
             query.setDescription(hd);
 
             recommender.cycle(query);

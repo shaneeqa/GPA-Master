@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://gaia.fdi.ucm.es/ontologies/gpa.owl#"
-     xml:base="http://gaia.fdi.ucm.es/ontologies/gpa.owl"
+<rdf:RDF xmlns="http://gaia.fdi.ucm.es/ontologies/languages.owl#"
+     xml:base="http://gaia.fdi.ucm.es/ontologies/languages.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://gaia.fdi.ucm.es/ontologies/gpa.owl"/>
+    <owl:Ontology rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl"/>
     
 
 
@@ -21,27 +21,93 @@
     
 
 
-    <!-- http://gaia.fdi.ucm.es/ontologies/gpa.owl#DBAdmin -->
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#DBAdmin -->
 
-    <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/gpa.owl#DBAdmin"/>
+    <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#DBAdmin">
+        <rdfs:subClassOf rdf:resource="http://gaia.fdi.ucm.es/ontologies/languages.owl#Software"/>
+    </owl:Class>
     
 
 
-    <!-- http://gaia.fdi.ucm.es/ontologies/gpa.owl#Dev -->
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#DataCommunications -->
 
-    <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/gpa.owl#Dev"/>
+    <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#DataCommunications">
+        <rdfs:subClassOf rdf:resource="http://gaia.fdi.ucm.es/ontologies/languages.owl#Network"/>
+    </owl:Class>
     
 
 
-    <!-- http://gaia.fdi.ucm.es/ontologies/gpa.owl#Finance -->
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#Dev -->
 
-    <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/gpa.owl#Finance"/>
+    <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#Dev">
+        <rdfs:subClassOf rdf:resource="http://gaia.fdi.ucm.es/ontologies/languages.owl#Software"/>
+    </owl:Class>
     
 
 
-    <!-- http://gaia.fdi.ucm.es/ontologies/gpa.owl#QA -->
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#Finance -->
 
-    <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/gpa.owl#QA"/>
+    <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#Finance">
+        <rdfs:subClassOf rdf:resource="http://gaia.fdi.ucm.es/ontologies/languages.owl#Software"/>
+    </owl:Class>
+    
+
+
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#GamingDevelopment -->
+
+    <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#GamingDevelopment">
+        <rdfs:subClassOf rdf:resource="http://gaia.fdi.ucm.es/ontologies/languages.owl#Multimedia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#Multimedia -->
+
+    <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#Multimedia"/>
+    
+
+
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#Network -->
+
+    <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#Network"/>
+    
+
+
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#QA -->
+
+    <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#QA">
+        <rdfs:subClassOf rdf:resource="http://gaia.fdi.ucm.es/ontologies/languages.owl#Software"/>
+    </owl:Class>
+    
+
+
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#Security -->
+
+    <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#Security">
+        <rdfs:subClassOf rdf:resource="http://gaia.fdi.ucm.es/ontologies/languages.owl#Network"/>
+    </owl:Class>
+    
+
+
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#Software -->
+
+    <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#Software"/>
+    
+
+
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#Systems -->
+
+    <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#Systems">
+        <rdfs:subClassOf rdf:resource="http://gaia.fdi.ucm.es/ontologies/languages.owl#Network"/>
+    </owl:Class>
+    
+
+
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#UI -->
+
+    <owl:Class rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#UI">
+        <rdfs:subClassOf rdf:resource="http://gaia.fdi.ucm.es/ontologies/languages.owl#Multimedia"/>
+    </owl:Class>
     
 
 
@@ -56,58 +122,106 @@
     
 
 
-    <!-- http://gaia.fdi.ucm.es/ontologies/gpa.owl#Automation -->
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#Automation -->
 
-    <owl:NamedIndividual rdf:about="http://gaia.fdi.ucm.es/ontologies/gpa.owl#Automation">
-        <rdf:type rdf:resource="http://gaia.fdi.ucm.es/ontologies/gpa.owl#QA"/>
+    <owl:NamedIndividual rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#Automation">
+        <rdf:type rdf:resource="http://gaia.fdi.ucm.es/ontologies/languages.owl#QA"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://gaia.fdi.ucm.es/ontologies/gpa.owl#BA -->
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#BusinessAnalyst -->
 
-    <owl:NamedIndividual rdf:about="http://gaia.fdi.ucm.es/ontologies/gpa.owl#BA">
-        <rdf:type rdf:resource="http://gaia.fdi.ucm.es/ontologies/gpa.owl#Finance"/>
+    <owl:NamedIndividual rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#BusinessAnalyst">
+        <rdf:type rdf:resource="http://gaia.fdi.ucm.es/ontologies/languages.owl#Finance"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://gaia.fdi.ucm.es/ontologies/gpa.owl#CSharp -->
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#CSharp -->
 
-    <owl:NamedIndividual rdf:about="http://gaia.fdi.ucm.es/ontologies/gpa.owl#CSharp">
-        <rdf:type rdf:resource="http://gaia.fdi.ucm.es/ontologies/gpa.owl#Dev"/>
+    <owl:NamedIndividual rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#CSharp">
+        <rdf:type rdf:resource="http://gaia.fdi.ucm.es/ontologies/languages.owl#Dev"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://gaia.fdi.ucm.es/ontologies/gpa.owl#FinanceController -->
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#CyberSecurity -->
 
-    <owl:NamedIndividual rdf:about="http://gaia.fdi.ucm.es/ontologies/gpa.owl#FinanceController">
-        <rdf:type rdf:resource="http://gaia.fdi.ucm.es/ontologies/gpa.owl#Finance"/>
+    <owl:NamedIndividual rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#CyberSecurity">
+        <rdf:type rdf:resource="http://gaia.fdi.ucm.es/ontologies/languages.owl#Security"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://gaia.fdi.ucm.es/ontologies/gpa.owl#Java -->
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#DataCommunicationsSpecialist -->
 
-    <owl:NamedIndividual rdf:about="http://gaia.fdi.ucm.es/ontologies/gpa.owl#Java">
-        <rdf:type rdf:resource="http://gaia.fdi.ucm.es/ontologies/gpa.owl#Dev"/>
+    <owl:NamedIndividual rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#DataCommunicationsSpecialist">
+        <rdf:type rdf:resource="http://gaia.fdi.ucm.es/ontologies/languages.owl#DataCommunications"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://gaia.fdi.ucm.es/ontologies/gpa.owl#NoSQL -->
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#FinanceController -->
 
-    <owl:NamedIndividual rdf:about="http://gaia.fdi.ucm.es/ontologies/gpa.owl#NoSQL">
-        <rdf:type rdf:resource="http://gaia.fdi.ucm.es/ontologies/gpa.owl#DBAdmin"/>
+    <owl:NamedIndividual rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#FinanceController">
+        <rdf:type rdf:resource="http://gaia.fdi.ucm.es/ontologies/languages.owl#Software"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://gaia.fdi.ucm.es/ontologies/gpa.owl#Oracle -->
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#Java -->
 
-    <owl:NamedIndividual rdf:about="http://gaia.fdi.ucm.es/ontologies/gpa.owl#Oracle">
-        <rdf:type rdf:resource="http://gaia.fdi.ucm.es/ontologies/gpa.owl#DBAdmin"/>
+    <owl:NamedIndividual rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#Java">
+        <rdf:type rdf:resource="http://gaia.fdi.ucm.es/ontologies/languages.owl#Dev"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#NoSQL -->
+
+    <owl:NamedIndividual rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#NoSQL">
+        <rdf:type rdf:resource="http://gaia.fdi.ucm.es/ontologies/languages.owl#DBAdmin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#Oracle -->
+
+    <owl:NamedIndividual rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#Oracle">
+        <rdf:type rdf:resource="http://gaia.fdi.ucm.es/ontologies/languages.owl#DBAdmin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#SystemsAdministrator -->
+
+    <owl:NamedIndividual rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#SystemsAdministrator">
+        <rdf:type rdf:resource="http://gaia.fdi.ucm.es/ontologies/languages.owl#Systems"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#SystemsEngineer -->
+
+    <owl:NamedIndividual rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#SystemsEngineer">
+        <rdf:type rdf:resource="http://gaia.fdi.ucm.es/ontologies/languages.owl#Systems"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#UIDesigner -->
+
+    <owl:NamedIndividual rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#UIDesigner">
+        <rdf:type rdf:resource="http://gaia.fdi.ucm.es/ontologies/languages.owl#UI"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://gaia.fdi.ucm.es/ontologies/languages.owl#VideoGameDeveloper -->
+
+    <owl:NamedIndividual rdf:about="http://gaia.fdi.ucm.es/ontologies/languages.owl#VideoGameDeveloper">
+        <rdf:type rdf:resource="http://gaia.fdi.ucm.es/ontologies/languages.owl#GamingDevelopment"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
