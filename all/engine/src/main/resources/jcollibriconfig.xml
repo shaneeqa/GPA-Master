@@ -1,5 +1,5 @@
 <TextFileConfiguration>
-	<FilePath>F:\GITHUB\GPAMaster\all\engine\src\main\resources\cases.csv</FilePath>
+	<FilePath>F:\GITHUB\UnivoProject\all\engine\src\main\resources\cases.csv</FilePath>
 	<Delimiters>,</Delimiters>
 	<DescriptionClassName>com.gpa.engine.jcollibri.GpaDescription</DescriptionClassName>
 	<DescriptionMappings>

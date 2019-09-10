@@ -12,7 +12,6 @@ import com.opencsv.CSVWriter;
 import es.ucm.fdi.gaia.jcolibri.cbraplications.StandardCBRApplication;
 import es.ucm.fdi.gaia.jcolibri.cbrcore.CBRQuery;
 import es.ucm.fdi.gaia.jcolibri.datatypes.Instance;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -43,16 +42,21 @@ public class IndexController {
         return URLConstants.Views.ADMIN;
     }
 
-    @RequestMapping(value = URLConstants.URLs.GPA)
-    public String index(@RequestParam String gpa, Model model) {
-        model.addAttribute("gpaValue", gpa);
-        return URLConstants.Views.GPA;
+    @RequestMapping(value = URLConstants.URLs.STUDENT)
+    public String student() {
+        return URLConstants.Views.STUDENT;
     }
 
-    @RequestMapping(value = URLConstants.URLs.SAVE_ADMIN)
+    @RequestMapping(value = URLConstants.URLs.PREDICTED)
+    public String index(@RequestParam String gpa, Model model) {
+        model.addAttribute("gpaValue", gpa);
+        return URLConstants.Views.PREDICTED;
+    }
+
+    @RequestMapping(value = URLConstants.URLs.SAVE_CASE)
     public String list(@RequestParam String regNo, Model model) {
         model.addAttribute("regNo", regNo);
-        return URLConstants.Views.SAVE_ADMIN;
+        return URLConstants.Views.SAVED_CASES;
     }
 
     @PostMapping(value = URLConstants.URLs.SAVE)
@@ -73,11 +77,11 @@ public class IndexController {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return URLConstants.Redirects.GPA + "?gpa=" + gpa;
+        return URLConstants.Redirects.PREDICTED + "?gpa=" + gpa;
 
     }
 
-    @PostMapping(value = URLConstants.URLs.SAVE_ADMIN)
+    @PostMapping(value = URLConstants.URLs.SAVE_CASE)
     public String createCase(StudentDTO studentDTO) throws Exception{
         Student studentCase = new Student();
         studentCase.setRegistrationNumber(studentDTO.getRegistrationNumber());
@@ -116,7 +120,7 @@ public class IndexController {
             e.printStackTrace();
         }
 
-        return URLConstants.Redirects.SAVE_ADMIN + "?regNo=" + regNo;
+        return URLConstants.Redirects.SAVE_CASE + "?regNo=" + regNo;
 
     }
 

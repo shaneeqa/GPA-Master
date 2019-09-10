@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>
+    <link href="../static/css/styles.css" rel="stylesheet" th:href="@{/css/styles.css}"/>
+    <link href="../static/css/stylesheet.css" rel="stylesheet" th:href="@{/css/stylesheet.css}"/>
+    <link href="../static/css/fontawesome-all.css" rel="stylesheet" th:href="@{/css/fontawesome-all.css}"/>
+    <link href="../static/css/inputmask.css" rel="stylesheet" th:href="@{/css/inputmask.css}"/>
+    <link href="../static/css/gpa.css" rel="stylesheet" th:href="@{/css/gpa.css}"/>
+</head>
+<body>
+    <div class="dashboard-main-wrapper">
+        <!-- navbar -->
+        <div class="dashboard-header">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                <a class="navbar-brand" href="">GPA Master</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+        <!--end navbar -->
+
+        <!-- left sidebar -->
+        <div class="nav-left-sidebar sidebar">
+            <div class="menu-list">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" th:href="@{/}">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" th:href="@{/student}">User Submission</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" th:href="@{/admin}">Administrator</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- end left sidebar -->
+        <!-- wrapper  -->
+        <div class="dashboard-wrapper">
+            <div class="container-fluid dashboard-content">
+                <div class="row">
+                    <div class="col-xl-10">
+                        <!-- pageheader  -->
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <h2 class="pageheader-title">Student Submission </h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="card">
+                                    <h5 class="card-header">Query</h5>
+                                    <div class="card-body">
+                                        <form th:action="@{${T(com.gpa.web.constants.URLConstants.URLs).SAVE}}" method="post" id="validationform" data-parsley-validate="" novalidate="">
+
+                                            <div class="form-group row">
+                                                <label class="col-sm-3 col-form-label text-sm-right">Select year</label>
+                                                <div class="col-sm-6">
+                                                    <div class="custom-control-inline">
+                                                        <label class="custom-control custom-radio">
+                                                            <input type="radio" name="radio-year" class="custom-control-input" onclick="selectYearI()"><span class="custom-control-label">Year I</span>                                                      </label>
+                                                        &nbsp&nbsp&nbsp&nbsp&nbsp<label class="custom-control custom-radio">
+                                                            <input type="radio" name="radio-year" class="custom-control-input" onclick="selectYearII()"><span class="custom-control-label">Year II</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-12 col-sm-3 col-form-label text-sm-right">Previous knowledge in IT</label>
+                                                <div class="col-12 col-sm-8 col-lg-6">
+                                                    <select class="form-control" required="" name="priorKnowledge" id="input-select-knowledge">
+                                                        <option></option>
+                                                        <option>Took ICT as a subject in G.C.E. Advanced Level</option>
+                                                        <option>NVQ Level 5 in ICT or NDICT or equivalent diploma in IT</option>
+                                                        <option>Did both</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-3 col-form-label text-sm-right">How many hours you've<br>done Self learning<br>(weekly) in Year I</label>
+                                                <div class="col-sm-6">
+                                                    <div class="custom-controls-stacked">
+                                                        <label class="custom-control custom-radio">
+                                                            <input type="radio" name="hoursOfWeeklyStudyI" value="Less than 7 hours" class="custom-control-input"><span class="custom-control-label" data-parsley-errors-container="#error-container1">Less than 7 hours (Not more than one hour per day)</span>                                                      </label>
+                                                        <label class="custom-control custom-radio">
+                                                            <input type="radio" name="hoursOfWeeklyStudyI" value="8 to 14 hours" class="custom-control-input"><span class="custom-control-label">8 to 14 hours (Around 1-2 hours per day) </span>
+                                                        </label>
+                                                        <label class="custom-control custom-radio">
+                                                            <input type="radio" name="hoursOfWeeklyStudyI" value="15 to 21 hours" class="custom-control-input"><span class="custom-control-label">15 to 21 hours(Around 2-3 hours per day)</span>
+                                                        </label>
+                                                        <label class="custom-control custom-radio">
+                                                            <input type="radio" name="hoursOfWeeklyStudyI" value="22 to 28 hours" class="custom-control-input"><span class="custom-control-label">22 to 28 hours (Around 3-4 hours per day)</span>
+                                                        </label>
+                                                        <label class="custom-control custom-radio">
+                                                            <input type="radio" name="hoursOfWeeklyStudyI" value="More than 28 hours" class="custom-control-input"><span class="custom-control-label">More than 28 hours</span>
+                                                        </label>
+                                                        <div id="error-container1"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row hide" id="div-hoursII">
+                                                <label class="col-sm-3 col-form-label text-sm-right">How many hours you've<br>done Self learning<br>(weekly) in Year II</label>
+                                                <div class="col-sm-6">
+                                                    <div class="custom-controls-stacked">
+                                                        <label class="custom-control custom-radio">
+                                                            <input type="radio" name="hoursOfWeeklyStudyII" value="Less than 7 hours" class="custom-control-input"><span class="custom-control-label">Less than 7 hours (Not more than one hour per day)</span>                                                      </label>
+                                                        <label class="custom-control custom-radio">
+                                                            <input type="radio" name="hoursOfWeeklyStudyII" value="8 to 14 hours" class="custom-control-input"><span class="custom-control-label">8 to 14 hours (Around 1-2 hours per day) </span>
+                                                        </label>
+                                                        <label class="custom-control custom-radio">
+                                                            <input type="radio" name="hoursOfWeeklyStudyII" value="15 to 21 hours" class="custom-control-input"><span class="custom-control-label">15 to 21 hours(Around 2-3 hours per day)</span>
+                                                        </label>
+                                                        <label class="custom-control custom-radio">
+                                                            <input type="radio" name="hoursOfWeeklyStudyII" value="22 to 28 hours" class="custom-control-input"><span class="custom-control-label">22 to 28 hours (Around 3-4 hours per day)</span>
+                                                        </label>
+                                                        <label class="custom-control custom-radio">
+                                                            <input type="radio" name="hoursOfWeeklyStudyII" value="More than 28 hours" class="custom-control-input"><span class="custom-control-label">More than 28 hours</span>
+                                                        </label>
+                                                        <div id="error-container1"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-12 col-sm-3 col-form-label text-sm-right">Your interaction with<br>the lecturer</label>
+                                                <div class="col-12 col-sm-8 col-lg-6">
+                                                    <select class="form-control" required="" name="interactionWithLecturer" id="input-select">
+                                                        <option></option>
+                                                        <option>Just attend the class and do practicals and assignments, no interaction with lecturers</option>
+                                                        <option>Not continuously attend classes, just sit for the assignments and exams</option>
+                                                        <option>Attend classes without fail and clear doubts in the related subject ny asking questions to the respective lecturers</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-12 col-sm-3 col-form-label text-sm-right">Year I GPA</label>
+                                                <div class="col-12 col-sm-8 col-lg-6">
+                                                    <input id="inputGpaI" type="text" name="gpaYearI" required="" class="form-control gpa-inputmask">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row hide" id="div-gpaII">
+                                                <label class="col-12 col-sm-3 col-form-label text-sm-right">Year II GPA</label>
+                                                <div class="col-12 col-sm-8 col-lg-6">
+                                                    <input id="inputGpaII" type="text" name="gpaYearII" class="form-control gpa-inputmask">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-12 col-sm-3 col-form-label text-sm-right">Number of projects you've<br>developed</label>
+                                                <div class="col-12 col-sm-8 col-lg-6">
+                                                    <input required="" type="number" min="0" name="developedProjects" class="form-control">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-group row text-right">
+                                                <div class="col col-sm-10 col-lg-9 offset-sm-1 offset-lg-0">
+                                                    <button type="submit" class="btn btn-space btn-primary">Submit</button>
+                                                    <button class="btn btn-space btn-brand">Cancel</button>
+                                                    <button type="reset" class="btn btn-danger btn-space">Reset</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- sidenavbar -->
+                </div>
+                <!-- end sidenavbar -->
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="text-md-right footer-links d-none d-sm-block">
+                            Project for University of Vocational Technology
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end footer -->
+    </div>
+    <script th:inline="javascript">
+        /*<![CDATA[*/
+        $(function(e) {
+            "use strict";
+            $(".regNo-inputmask").inputmask("ICT-99-B1-999"),
+                $(".gpa-inputmask").inputmask("9.99"),
+                $(".date-inputmask").inputmask("dd/mm/yyyy");
+        });
+        /*]]>*/
+    </script>
+    <script th:inline="javascript">
+        /*<![CDATA[*/
+        $('#validationform').parsley();
+        /*]]>*/
+    </script>
+    <script th:inline="javascript">
+        /*<![CDATA[*/
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+        /*]]>*/
+    </script>
+
+
+    <script href="../static/js/jquery-3.3.1.min.js" th:src="@{/js/jquery-3.3.1.min.js}"></script>
+    <script href="../static/js/bootstrap.bundle.js" th:src="@{/js/bootstrap.bundle.js}"></script>
+    <script href="../static/js/jquery.slimscroll.js" th:src="@{/js/jquery.slimscroll.js}"></script>
+    <script href="../static/js/main-js.js" th:src="@{/js/main-js.js}"></script>
+    <script href="../static/js/jquery.inputmask.bundle.js" th:src="@{/js/jquery.inputmask.bundle.js}"></script>
+    <script href="../static/js/parsley.js" th:src="@{/js/parsley.js}"></script>
+    <script href="../static/js/gpa.js" th:src="@{/js/gpa.js}"></script>
+</body>
+</html>
