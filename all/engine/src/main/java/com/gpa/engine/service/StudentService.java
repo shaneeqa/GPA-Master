@@ -1,4 +1,4 @@
-/*package com.gpa.engine.service;
+package com.gpa.engine.service;
 
 import com.gpa.engine.repository.StudentRepository;
 import com.gpa.engine.model.Student;
@@ -12,8 +12,7 @@ public class StudentService {
 
     @Autowired
     private StudentRepository studentRepository;
-  *//*  @Autowired
-    private StudentRepository studentRepository;*//*
+
 
     public Student findByRegistrationNumber(String number) {
         return studentRepository.findByRegistrationNumber(number);
@@ -23,4 +22,4 @@ public class StudentService {
         return studentRepository.save(student);
     }
 
-}*/
+}

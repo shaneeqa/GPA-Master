@@ -1,7 +1,5 @@
 package com.gpa.engine.dto;
 
-import es.ucm.fdi.gaia.jcolibri.datatypes.Instance;
-
 public class StudentDTO {
     private String registrationNumber;
     private String priorKnowledge;

@@ -2,45 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e130bbd4-ffbf-4259-b113-7a13edef6da4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/dto/AdminDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/model/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine/src/main/resources/user.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/gpa/web/controller/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/resources/templates/newcase.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/engine/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/dto/StudentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/dto/StudentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/jcollibri/Gpa.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/jcollibri/Gpa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/src/main/resources/cases.csv" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/resources/cases.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/src/main/resources/out.csv" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/resources/out.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/gpa/web/constants/FileConstraints.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/gpa/web/constants/FileConstraints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/gpa/web/constants/URLConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/gpa/web/constants/URLConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/service/StudentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/java/com/gpa/web/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/gpa/web/controller/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/gpa.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/gpa.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/newcase.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/newcase.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/resources/templates/student.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/templates/student.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/gpa/web/constants/FileConstraints.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/gpa/web/constants/FileConstraints.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/gpa/web/constants/URLConstants$Redirects.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/gpa/web/constants/URLConstants$Redirects.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/gpa/web/constants/URLConstants$URLs.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/gpa/web/constants/URLConstants$URLs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/gpa/web/constants/URLConstants$Views.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/gpa/web/constants/URLConstants$Views.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/gpa/web/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/gpa/web/controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0.war.original" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0.war.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/com/gpa/web/constants/FileConstraints.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/com/gpa/web/constants/FileConstraints.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/com/gpa/web/constants/URLConstants$Redirects.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/com/gpa/web/constants/URLConstants$Redirects.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/com/gpa/web/constants/URLConstants$URLs.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/com/gpa/web/constants/URLConstants$URLs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/com/gpa/web/constants/URLConstants$Views.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/com/gpa/web/constants/URLConstants$Views.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/com/gpa/web/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/com/gpa/web/controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/templates/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/templates/gpa.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/templates/gpa.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/templates/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/templates/student.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/classes/templates/student.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/lib/engine-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web-1.0/WEB-INF/lib/engine-1.0.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/engine/target/" />
     <ignored path="$PROJECT_DIR$/web/target/" />
@@ -209,8 +183,9 @@
         <counts>
           <entry key="css" value="24" />
           <entry key="csv" value="19" />
-          <entry key="html" value="1361" />
-          <entry key="java" value="1362" />
+          <entry key="html" value="1452" />
+          <entry key="java" value="1363" />
+          <entry key="js" value="63" />
           <entry key="xml" value="20" />
         </counts>
       </usages-collector>
@@ -218,30 +193,33 @@
         <counts>
           <entry key="CSS" value="24" />
           <entry key="CSV" value="19" />
-          <entry key="HTML" value="1361" />
-          <entry key="JAVA" value="1362" />
+          <entry key="HTML" value="1452" />
+          <entry key="JAVA" value="1363" />
+          <entry key="JavaScript" value="63" />
           <entry key="XML" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="5" />
+          <entry key="css" value="8" />
           <entry key="csv" value="5" />
-          <entry key="html" value="16" />
-          <entry key="java" value="20" />
-          <entry key="js" value="3" />
+          <entry key="html" value="21" />
+          <entry key="java" value="33" />
+          <entry key="js" value="5" />
           <entry key="owl" value="4" />
+          <entry key="rnc" value="2" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="5" />
+          <entry key="CSS" value="8" />
           <entry key="CSV" value="5" />
-          <entry key="HTML" value="16" />
-          <entry key="JAVA" value="20" />
-          <entry key="JavaScript" value="3" />
+          <entry key="HTML" value="21" />
+          <entry key="JAVA" value="33" />
+          <entry key="JavaScript" value="5" />
           <entry key="PLAIN_TEXT" value="4" />
+          <entry key="RNG Compact" value="2" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -250,81 +228,32 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/index.html">
+        <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/model/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="83" column="116" lean-forward="true" selection-start-line="83" selection-start-column="52" selection-end-line="83" selection-end-column="116" />
+            <state relative-caret-position="170">
+              <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/DataToSystem.csv">
-          <provider editor-type-id="csv-text-editor" />
-          <provider selected="true" editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3">
-              <column index="0" width="100" />
-              <column index="1" width="100" />
-              <column index="2" width="100" />
-              <column index="3" width="100" />
-              <column index="4" width="100" />
-              <column index="5" width="100" />
-              <column index="6" width="100" />
-              <column index="7" width="100" />
-              <column index="8" width="100" />
-              <column index="9" width="100" />
-              <column index="10" width="100" />
-              <column index="11" width="100" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/gpa/web/controller/IndexController.java">
+        <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/repository/StudentRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1700">
-              <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/student.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="143" column="50" lean-forward="true" selection-start-line="133" selection-start-column="44" selection-end-line="143" selection-end-column="50" />
+            <state relative-caret-position="119">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/newcase.html">
+        <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/service/StudentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-712">
-              <caret line="128" column="86" lean-forward="true" selection-start-line="128" selection-start-column="86" selection-end-line="128" selection-end-column="86" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/gpa/web/constants/URLConstants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/model/Student.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+            <state relative-caret-position="221">
+              <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#658#659#0" expanded="true" />
+                <element signature="e#712#713#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -355,6 +284,7 @@
       <find>&quot;</find>
       <find>studentSer</find>
       <find>BA</find>
+      <find>required</find>
     </findStrings>
     <replaceStrings>
       <replace>gpa</replace>
@@ -367,7 +297,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/engine/src/main/java/com/nasmin/engine/jcollibri/Bug1.java" />
         <option value="$PROJECT_DIR$/engine/src/main/resources/bugplaintextconfig.xml" />
         <option value="$PROJECT_DIR$/web/src/main/resources/static/js/student.js" />
         <option value="$PROJECT_DIR$/web/src/main/resources/static/css/applyStyle.css" />
@@ -389,16 +318,12 @@
         <option value="$PROJECT_DIR$/web/pom.xml" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/gpa/web/Application.java" />
         <option value="$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/config/DevDatabaseConfig.java" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/static/js/gpa.js" />
         <option value="G:/DataToSystem.csv" />
         <option value="$PROJECT_DIR$/engine/src/main/resources/out.csv" />
         <option value="$PROJECT_DIR$/engine/src/main/resources/gpa.owl" />
         <option value="$PROJECT_DIR$/web/src/main/resources/static/js/script.js" />
-        <option value="$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/service/StudentService.java" />
         <option value="$PROJECT_DIR$/engine/src/main/resources/jcollibriconfig.xml" />
         <option value="$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/jcollibri/GpaDescription.java" />
-        <option value="$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/dto/StudentDTO.java" />
-        <option value="$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/jcollibri/Gpa.java" />
         <option value="$PROJECT_DIR$/engine/src/main/resources/user.csv" />
         <option value="$PROJECT_DIR$/web/src/main/resources/static/css/gpa.css" />
         <option value="$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/model/Admin.java" />
@@ -408,16 +333,21 @@
         <option value="$PROJECT_DIR$/web/src/main/resources/templates/newCase.html" />
         <option value="$USER_HOME$/Desktop/DataToSystem.csv" />
         <option value="$PROJECT_DIR$/engine/src/main/resources/cases.csv" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/templates/login.html" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/templates/admin.html" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/templates/list.html" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/templates/gpa.html" />
-        <option value="$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/model/Student.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/gpa/web/constants/URLConstants.java" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/static/js/parsley.js" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/templates/gpa.html" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/static/js/gpa.js" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/templates/list.html" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/gpa/web/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/web/src/main/resources/templates/student.html" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/templates/admin.html" />
         <option value="$PROJECT_DIR$/web/src/main/resources/templates/newcase.html" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/dto/StudentDTO.java" />
+        <option value="$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/jcollibri/Gpa.java" />
+        <option value="$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/model/Student.java" />
+        <option value="$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/service/StudentService.java" />
       </list>
     </option>
   </component>
@@ -554,6 +484,16 @@
               <item name="engine" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="all" type="b2602c69:ProjectViewProjectNode" />
+              <item name="all" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -636,6 +576,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="all" type="b2602c69:ProjectViewProjectNode" />
+              <item name="all" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -657,7 +607,7 @@
     <property name="SearchEverywhereHistoryKey" value="StandardCBRApplication&#9;FILE&#9;jar://C:/Users/hp/.m2/repository/es/ucm/fdi/gaia/jCOLIBRI/3.2/jCOLIBRI-3.2.jar!/es/ucm/fdi/gaia/jcolibri/cbraplications/StandardCBRApplication.class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568159468216" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568163624573" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -752,12 +702,12 @@
       <workItem from="1568034020761" duration="2843000" />
       <workItem from="1568037184892" duration="34252000" />
       <workItem from="1568131806889" duration="277000" />
-      <workItem from="1568132538988" duration="24480000" />
+      <workItem from="1568132538988" duration="28481000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180517000" />
+    <option name="totallyTimeSpent" value="184518000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -787,7 +737,7 @@
       <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Spring" order="5" />
       <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.32993197" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.4489796" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.43862522" />
       <window_info anchor="bottom" id="Debug" order="9" sideWeight="0.55673224" weight="0.292517" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
@@ -851,25 +801,25 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/web/src/main/java/com/gpa/web/controller/IndexController.java</url>
-          <line>115</line>
+          <line>114</line>
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/web/src/main/java/com/gpa/web/controller/IndexController.java</url>
-          <line>123</line>
+          <line>122</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/model/Student.java</url>
-          <line>105</line>
+          <line>102</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/model/Student.java</url>
-          <line>109</line>
+          <line>106</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
@@ -893,7 +843,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/web/src/main/java/com/gpa/web/controller/IndexController.java</url>
-          <line>78</line>
+          <line>77</line>
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
@@ -901,13 +851,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/engine/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-868">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/config/DevDatabaseConfig.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -951,13 +894,6 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/js/gpa.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/rt.jar!/sun/nio/ch/WindowsSelectorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
@@ -969,13 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/jcollibri/GpaSolution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1007,21 +936,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/repository/StudentRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/repository/TestRepository.java" />
-    <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/service/StudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/engine/src/main/resources/out.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="17">
@@ -1039,63 +954,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/jcollibri/GpaDescription.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="72" column="31" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
-          <folding>
-            <element signature="e#1705#1706#0" expanded="true" />
-            <element signature="e#1742#1743#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/engine/src/main/resources/gpa.owl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
           <caret line="206" column="84" lean-forward="true" selection-start-line="206" selection-start-column="84" selection-end-line="206" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/jcollibri/Gpa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1649">
-          <caret line="57" column="34" lean-forward="true" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1568145648315" expanded="true" signature="4044:4746" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="5" column="5238" selection-start-line="5" selection-start-column="5238" selection-end-line="5" selection-end-column="5238" />
-          <folding>
-            <element signature="e#58441#58641#2" expanded="true" />
-            <element signature="e#58849#58998#2" expanded="true" />
-            <element signature="e#59500#59646#2" expanded="true" />
-            <element signature="e#59947#60113#1" expanded="true" />
-            <element signature="e#70793#71036#2" expanded="true" />
-            <element signature="e#71903#72152#2" expanded="true" />
-            <element signature="e#98915#99105#2" expanded="true" />
-            <element signature="e#99151#99341#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7089" column="5" selection-start-line="7089" selection-start-column="5" selection-end-line="7089" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/css/gpa.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1109,53 +971,12 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/gpa/web/constants/FileConstraints.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="80" selection-start-line="4" selection-start-column="80" selection-end-line="4" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/model/Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="e#160#161#0" expanded="true" />
-            <element signature="e#190#191#0" expanded="true" />
-            <element signature="e#236#237#0" expanded="true" />
-            <element signature="e#274#275#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/gpa/web/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/dto/AdminDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="e#142#143#0" expanded="true" />
-            <element signature="e#172#173#0" expanded="true" />
-            <element signature="e#218#219#0" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1167,13 +988,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/js/parsley.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39389">
-          <caret line="2324" column="16" selection-start-line="2324" selection-start-column="16" selection-end-line="2324" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1197,70 +1011,6 @@
           <column index="9" width="100" />
           <column index="10" width="100" />
           <column index="11" width="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/dto/StudentDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="95" column="39" selection-start-line="95" selection-start-column="39" selection-end-line="95" selection-end-column="39" />
-          <folding>
-            <element signature="e#2319#2320#0" expanded="true" />
-            <element signature="e#2355#2356#0" expanded="true" />
-            <element signature="e#2404#2405#0" expanded="true" />
-            <element signature="e#2454#2455#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="83" column="116" lean-forward="true" selection-start-line="83" selection-start-column="52" selection-end-line="83" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
-          <folding>
-            <element signature="n#style#0;n#b#0;n#p#0;n#blockquote#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/gpa.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="68" column="100" selection-start-line="68" selection-start-column="100" selection-end-line="68" selection-end-column="100" />
-          <folding>
-            <element signature="n#style#0;n#b#0;n#p#0;n#blockquote#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="40" column="71" selection-start-line="40" selection-start-column="71" selection-end-line="40" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/model/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1290,27 +1040,215 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/gpa/web/controller/IndexController.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+        <state relative-caret-position="-735">
+          <caret line="7089" column="5" selection-start-line="7089" selection-start-column="5" selection-end-line="7089" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms2.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/js/parsley.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="2402" column="52" lean-forward="true" selection-start-line="2402" selection-start-column="52" selection-end-line="2402" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/css/gpa.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="5" column="6577" selection-start-line="5" selection-start-column="6577" selection-end-line="5" selection-end-column="6577" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#58441#58641#2" expanded="true" />
+            <element signature="e#58849#58998#2" expanded="true" />
+            <element signature="e#59500#59646#2" expanded="true" />
+            <element signature="e#59947#60113#1" expanded="true" />
+            <element signature="e#70793#71036#2" expanded="true" />
+            <element signature="e#71903#72152#2" expanded="true" />
+            <element signature="e#98915#99105#2" expanded="true" />
+            <element signature="e#99151#99341#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/js/gpa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="6" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/gpa/web/constants/FileConstraints.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="50" selection-start-line="4" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="115" column="10" selection-start-line="115" selection-start-column="10" selection-end-line="115" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" column="14" lean-forward="true" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#b#0;n#p#0;n#blockquote#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/student.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="143" column="50" lean-forward="true" selection-start-line="133" selection-start-column="44" selection-end-line="143" selection-end-column="50" />
+        <state relative-caret-position="3668">
+          <caret line="219" column="10" selection-start-line="219" selection-start-column="10" selection-end-line="219" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="85" column="4" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/gpa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+          <folding>
+            <element signature="n#style#0;n#b#0;n#p#0;n#blockquote#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/newcase.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-712">
-          <caret line="128" column="86" lean-forward="true" selection-start-line="128" selection-start-column="86" selection-end-line="128" selection-end-column="86" />
+        <state relative-caret-position="268">
+          <caret line="218" column="10" selection-start-line="218" selection-start-column="10" selection-end-line="218" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="112" column="10" selection-start-line="112" selection-start-column="10" selection-end-line="112" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/dto/AdminDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="e#142#143#0" expanded="true" />
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/dto/StudentDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-908">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/gpa/web/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="193" column="28" selection-start-line="193" selection-start-column="28" selection-end-line="193" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/jcollibri/Gpa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="129" column="4" lean-forward="true" selection-start-line="129" selection-start-column="4" selection-end-line="129" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1568163604499" expanded="true" signature="4073:4775" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/jcollibri/GpaDescription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-857">
+          <caret line="4" column="51" lean-forward="true" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/jcollibri/GpaSolution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/model/Admin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/model/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/repository/StudentRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine/src/main/java/com/gpa/engine/service/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

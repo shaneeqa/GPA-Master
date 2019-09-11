@@ -14,6 +14,7 @@ import es.ucm.fdi.gaia.jcolibri.cbrcore.CBRCaseBase;
 import es.ucm.fdi.gaia.jcolibri.cbrcore.CBRQuery;
 import es.ucm.fdi.gaia.jcolibri.cbrcore.Connector;
 import es.ucm.fdi.gaia.jcolibri.connector.PlainTextConnector;
+import es.ucm.fdi.gaia.jcolibri.datatypes.Instance;
 import es.ucm.fdi.gaia.jcolibri.exception.ExecutionException;
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.local.ontology.OntCosine;
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.RetrievalResult;
@@ -30,8 +31,6 @@ import es.ucm.fdi.gaia.ontobridge.OntologyDocument;
 public class Gpa implements StandardCBRApplication
 {
 	private static final String OUT_CSV_FILE_PATH = "F:/GITHUB/UnivoProject/all/engine/src/main/resources/out.csv";
-
-	// add database here
 
     /** Connector object */
     Connector _connector;
@@ -143,16 +142,17 @@ public class Gpa implements StandardCBRApplication
 
 	    CBRQuery query = new CBRQuery();
 
-	    GpaDescription hd = new GpaDescription();
-	    hd.setId(studentDTO.getRegistrationNumber());
-	    hd.setHoursOfWeeklyStudyI(studentDTO.getHoursOfWeeklyStudyI());
-	    hd.setHoursOfWeeklyStudyII(studentDTO.getHoursOfWeeklyStudyII());
-	    hd.setPriorKnowledge(studentDTO.getPriorKnowledge());
-	    hd.setDevelopedProjects(studentDTO.getDevelopedProjects());
-	    hd.setGpaYearI(studentDTO.getGpaYearI());
-	    hd.setGpaYearII(studentDTO.getGpaYearII());
-	    hd.setInteractionWithLecturer(studentDTO.getInteractionWithLecturer());
-	    query.setDescription(hd);
+		GpaDescription hd = new GpaDescription();
+		hd.setId(studentDTO.getRegistrationNumber());
+		hd.setHoursOfWeeklyStudyI(studentDTO.getHoursOfWeeklyStudyI());
+		hd.setHoursOfWeeklyStudyII(studentDTO.getHoursOfWeeklyStudyII());
+		hd.setPriorKnowledge(studentDTO.getPriorKnowledge());
+		hd.setDevelopedProjects(studentDTO.getDevelopedProjects());
+		hd.setGpaYearI(studentDTO.getGpaYearI());
+		hd.setGpaYearII(studentDTO.getGpaYearII());
+		hd.setInteractionWithLecturer(studentDTO.getInteractionWithLecturer());
+		hd.setPreferredArea(new Instance(studentDTO.getPreferredArea()));
+		query.setDescription(hd);
 
 	    recommender.cycle(query);
 

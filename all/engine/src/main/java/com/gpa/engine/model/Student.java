@@ -1,9 +1,6 @@
 package com.gpa.engine.model;
 
-import es.ucm.fdi.gaia.jcolibri.datatypes.Instance;
-
 import javax.persistence.*;
-import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "student")

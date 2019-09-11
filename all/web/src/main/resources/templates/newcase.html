@@ -14,21 +14,25 @@
 </head>
 <body>
     <div class="dashboard-main-wrapper">
-        <!-- navbar -->
+    <!-- navbar -->
         <div class="dashboard-header">
             <nav class="navbar navbar-expand-lg bg-dark fixed-top">
-                <a class="navbar-brand" href="">GPA Master</a>
+                <a class="navbar-brand" th:href="@{/}">GPA Master</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    HOME<span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
             </nav>
         </div>
-        <!--end navbar -->
+        <!-- end navbar -->
 
         <!-- left sidebar -->
         <div class="nav-left-sidebar sidebar">
             <div class="menu-list">
                 <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="d-xl-none d-lg-none" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav flex-column">
                             <li class="nav-item">
@@ -46,6 +50,7 @@
             </div>
         </div>
         <!-- end left sidebar -->
+    </div>
         <!-- wrapper  -->
         <div class="dashboard-wrapper">
             <div class="container-fluid dashboard-content">
@@ -212,43 +217,6 @@
         </div>
         <!-- end footer -->
     </div>
-    <!--<script th:inline="javascript">
-        /*<![CDATA[*/
-        $(function(e) {
-            "use strict";
-            $(".regNo-inputmask").inputmask("ICT-99-B1-999"),
-                $(".gpa-inputmask").inputmask("9.99"),
-                $(".date-inputmask").inputmask("dd/mm/yyyy")
-        });
-        /*]]>*/
-    </script>-->
-<!--    <script th:inline="javascript">
-        /*<![CDATA[*/
-        $('#form').parsley();
-        /*]]>*/
-    </script>-->
-    <!--<script th:inline="javascript">
-        /*<![CDATA[*/
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function() {
-            'use strict';
-            window.addEventListener('load', function() {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.getElementsByClassName('needs-validation');
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function(form) {
-                    form.addEventListener('submit', function(event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        }
-                        form.classList.add('was-validated');
-                    }, false);
-                });
-            }, false);
-        })();
-        /*]]>*/
-    </script>-->
 
     <script src="../static/js/jquery-3.3.1.min.js" th:src="@{/js/jquery-3.3.1.min.js}"></script>
     <script src="../static/js/bootstrap.bundle.js" th:src="@{/js/bootstrap.bundle.js}"></script>
