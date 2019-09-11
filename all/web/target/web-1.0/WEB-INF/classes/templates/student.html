@@ -17,18 +17,22 @@
         <!-- navbar -->
         <div class="dashboard-header">
             <nav class="navbar navbar-expand-lg bg-dark fixed-top">
-                <a class="navbar-brand" href="">GPA Master</a>
+                <a class="navbar-brand" th:href="@{/}">GPA Master</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </nav>
         </div>
-        <!--end navbar -->
+        <!-- end navbar -->
 
         <!-- left sidebar -->
         <div class="nav-left-sidebar sidebar">
             <div class="menu-list">
                 <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="d-xl-none d-lg-none" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav flex-column">
                             <li class="nav-item">
@@ -46,7 +50,8 @@
             </div>
         </div>
         <!-- end left sidebar -->
-        <!-- wrapper  -->
+    </div>
+    <!-- wrapper  -->
         <div class="dashboard-wrapper">
             <div class="container-fluid dashboard-content">
                 <div class="row">
@@ -79,11 +84,11 @@
                                             <div class="form-group row">
                                                 <label class="col-12 col-sm-3 col-form-label text-sm-right">Previous knowledge in IT</label>
                                                 <div class="col-12 col-sm-8 col-lg-6">
-                                                    <select class="form-control" required="" name="priorKnowledge" id="input-select-knowledge">
+                                                    <select class="form-control" required="" data-parsley-required-message="You must select at least one option." name="priorKnowledge" id="input-select-knowledge">
                                                         <option></option>
                                                         <option>Took ICT as a subject in G.C.E. Advanced Level</option>
                                                         <option>NVQ Level 5 in ICT or NDICT or equivalent diploma in IT</option>
-                                                        <option>Did both</option>
+                                                        <option>Advanced Level ICT and Diploma</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -92,7 +97,7 @@
                                                 <div class="col-sm-6">
                                                     <div class="custom-controls-stacked">
                                                         <label class="custom-control custom-radio">
-                                                            <input type="radio" name="hoursOfWeeklyStudyI" value="Less than 7 hours" class="custom-control-input"><span class="custom-control-label" data-parsley-errors-container="#error-container1">Less than 7 hours (Not more than one hour per day)</span>                                                      </label>
+                                                            <input type="radio" name="hoursOfWeeklyStudyI" required="" value="Less than 7 hours" class="custom-control-input"><span class="custom-control-label" data-parsley-errors-container="#error-container1">Less than 7 hours (Not more than one hour per day)</span>                                                      </label>
                                                         <label class="custom-control custom-radio">
                                                             <input type="radio" name="hoursOfWeeklyStudyI" value="8 to 14 hours" class="custom-control-input"><span class="custom-control-label">8 to 14 hours (Around 1-2 hours per day) </span>
                                                         </label>
@@ -134,18 +139,18 @@
                                             <div class="form-group row">
                                                 <label class="col-12 col-sm-3 col-form-label text-sm-right">Your interaction with<br>the lecturer</label>
                                                 <div class="col-12 col-sm-8 col-lg-6">
-                                                    <select class="form-control" required="" name="interactionWithLecturer" id="input-select">
+                                                    <select class="form-control" required="" data-parsley-required-message="You must select at least one option." name="interactionWithLecturer" id="input-select">
                                                         <option></option>
-                                                        <option>Just attend the class and do practicals and assignments, no interaction with lecturers</option>
-                                                        <option>Not continuously attend classes, just sit for the assignments and exams</option>
-                                                        <option>Attend classes without fail and clear doubts in the related subject ny asking questions to the respective lecturers</option>
+                                                        <option>Rarely attended the lectures but sit for assignments and exams, no interaction with lecturer</option>
+                                                        <option>Attended lectures with less percentage of absent (~10% - 20%)</option>
+                                                        <option>Attended lectures without fail and cleared doubts in modules with respective lecturers</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-12 col-sm-3 col-form-label text-sm-right">Year I GPA</label>
                                                 <div class="col-12 col-sm-8 col-lg-6">
-                                                    <input id="inputGpaI" type="text" name="gpaYearI" required="" class="form-control gpa-inputmask">
+                                                    <input id="inputGpaI" type="text" min="0.00" max="4.00" step="1" data-parsley-validation-threshold="1" data-parsley-type="number"  name="gpaYearI" required="" class="form-control gpa-inputmask">
                                                 </div>
                                             </div>
                                             <div class="form-group row hide" id="div-gpaII">
@@ -157,13 +162,13 @@
                                             <div class="form-group row">
                                                 <label class="col-12 col-sm-3 col-form-label text-sm-right">Number of projects you've<br>developed</label>
                                                 <div class="col-12 col-sm-8 col-lg-6">
-                                                    <input required="" type="number" min="0" name="developedProjects" class="form-control">
+                                                    <input required="" type="text" min="0" step="1" data-parsley-validation-threshold="1" data-parsley-trigger="keyup" data-parsley-type="digits" name="developedProjects" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label class="col-12 col-sm-3 col-form-label text-sm-right">Your preferred area in the job<br>industry</label>
                                                 <div class="col-12 col-sm-8 col-lg-6">
-                                                    <select class="form-control" required="" name="preferredArea" id="input-select">
+                                                    <select class="form-control" required="" data-parsley-required-message="You must select at least one option." name="preferredArea" id="input-select">
                                                         <option></option>
                                                         <option>Automation</option>
                                                         <option>BusinessAnalyst</option>
@@ -213,44 +218,6 @@
         </div>
         <!-- end footer -->
     </div>
-    <script th:inline="javascript">
-        /*<![CDATA[*/
-        $(function(e) {
-            "use strict";
-            $(".regNo-inputmask").inputmask("ICT-99-B1-999"),
-                $(".gpa-inputmask").inputmask("9.99"),
-                $(".date-inputmask").inputmask("dd/mm/yyyy");
-        });
-        /*]]>*/
-    </script>
-    <script th:inline="javascript">
-        /*<![CDATA[*/
-        $('#validationform').parsley();
-        /*]]>*/
-    </script>
-    <script th:inline="javascript">
-        /*<![CDATA[*/
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function() {
-            'use strict';
-            window.addEventListener('load', function() {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.getElementsByClassName('needs-validation');
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function(form) {
-                    form.addEventListener('submit', function(event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        }
-                        form.classList.add('was-validated');
-                    }, false);
-                });
-            }, false);
-        })();
-        /*]]>*/
-    </script>
-
 
     <script href="../static/js/jquery-3.3.1.min.js" th:src="@{/js/jquery-3.3.1.min.js}"></script>
     <script href="../static/js/bootstrap.bundle.js" th:src="@{/js/bootstrap.bundle.js}"></script>
