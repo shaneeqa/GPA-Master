@@ -53,24 +53,6 @@ public class IndexController {
         return URLConstants.Views.SAVED_CASES;
     }
 
-    private static final String ALPHA_NUMERIC_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-
-    public static String randomAlphaNumeric(int count) {
-
-        StringBuilder builder = new StringBuilder();
-
-        while (count-- != 0) {
-
-            int character = (int)(Math.random()*ALPHA_NUMERIC_STRING.length());
-
-            builder.append(ALPHA_NUMERIC_STRING.charAt(character));
-
-        }
-
-        return builder.toString();
-
-    }
-
     @PostMapping(value = URLConstants.URLs.CHECK_CASE)
     public String studentCase(StudentDTO studentDTO){
         Student studentCase = new Student();
@@ -156,7 +138,11 @@ public class IndexController {
         String[] nextRecord;
 
 //get solution GPA from csv file
-        String id ="";
+
+    Double record1 = 0.0;
+        double record2 = 0.0;
+        double record3 = 0.0;
+        double record;
         try (
                 Reader reader = Files.newBufferedReader(Paths.get(OUT_CSV_FILE_PATH));
                 CSVReader csvReader = new CSVReader(reader);
@@ -164,11 +150,15 @@ public class IndexController {
             // Reading Records One by One in a String array
 
             while ((nextRecord = csvReader.readNext()) != null) {
-                id = nextRecord[0];
+                record1 = Double.parseDouble(nextRecord[0]);
+                record2 = Double.parseDouble(nextRecord[1]);
+                record3 = Double.parseDouble(nextRecord[2]);
             }
         }
-        return id; //to show in the view html
 
+        record = ((record1+record2+record3)/3);
+
+        return Double.toString(record); //to show in the view html
 
     }
 

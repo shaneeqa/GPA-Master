@@ -16,7 +16,10 @@ import es.ucm.fdi.gaia.jcolibri.cbrcore.Connector;
 import es.ucm.fdi.gaia.jcolibri.connector.PlainTextConnector;
 import es.ucm.fdi.gaia.jcolibri.datatypes.Instance;
 import es.ucm.fdi.gaia.jcolibri.exception.ExecutionException;
+import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.local.EnumDistance;
+import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.local.Interval;
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.local.ontology.OntCosine;
+import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.local.recommenders.InrecaLessIsBetter;
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.RetrievalResult;
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.NNConfig;
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.NNScoringMethod;
@@ -66,12 +69,12 @@ public class Gpa implements StandardCBRApplication
 	// Set the average() global similarity function for the description of the case
 	simConfig.setDescriptionSimFunction(new Average());
 	simConfig.addMapping(new Attribute("priorKnowledge", GpaDescription.class), new Equal());
-	simConfig.addMapping(new Attribute("hoursOfWeeklyStudyI", GpaDescription.class), new Equal());
-	simConfig.addMapping(new Attribute("hoursOfWeeklyStudyII", GpaDescription.class), new Equal());
+	simConfig.addMapping(new Attribute("hoursOfWeeklyStudyI", GpaDescription.class), new EnumDistance());
+	simConfig.addMapping(new Attribute("hoursOfWeeklyStudyII", GpaDescription.class), new EnumDistance());
 	simConfig.addMapping(new Attribute("interactionWithLecturer", GpaDescription.class), new Equal());
 	simConfig.addMapping(new Attribute("developedProjects", GpaDescription.class), new Equal());
-	simConfig.addMapping(new Attribute("gpaYearI", GpaDescription.class), new Equal());
-	simConfig.addMapping(new Attribute("gpaYearII", GpaDescription.class), new Equal());
+	simConfig.addMapping(new Attribute("gpaYearI", GpaDescription.class), new InrecaLessIsBetter(4.0,0.1));
+	simConfig.addMapping(new Attribute("gpaYearII", GpaDescription.class), new InrecaLessIsBetter(4.0,0.1));
 	simConfig.addMapping(new Attribute("preferredArea", GpaDescription.class), new OntCosine());
 
 
@@ -83,32 +86,30 @@ public class Gpa implements StandardCBRApplication
 		Collection<RetrievalResult> eval = NNScoringMethod.evaluateSimilarity(_caseBase.getCases(), query, simConfig);
 
 		// Select cases
-		Collection<CBRCase> retrievedCases = SelectCases.selectTopK(eval, 1);
+		Collection<CBRCase> retrievedCases = SelectCases.selectTopK(eval, 3);
 
 		// Print the retrieval
 		for (CBRCase nse : retrievedCases) {
 			GpaDescription gpaDescription =  (GpaDescription) nse.getDescription();
 			System.out.println("GPA : " + gpaDescription.getFinalGpa());
-
 			//update final gpa to the db or csv file
-            CSVWriter csvWriter = null;
-            try {
-                csvWriter = new CSVWriter(new FileWriter(OUT_CSV_FILE_PATH));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+			CSVWriter csvWriter = null;
+			try {
+				csvWriter = new CSVWriter(new FileWriter(OUT_CSV_FILE_PATH,true));
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 
 			String gpa = gpaDescription.getFinalGpa().toString();
-            String[] records = {gpa};
-            csvWriter.writeNext(records);
-            try {
-                csvWriter.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+			String[] records = {gpa};
+			csvWriter.writeNext(records);
+			try {
+				csvWriter.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 
-
-        }
+		}
 
 	}
 
