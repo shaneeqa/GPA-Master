@@ -16,6 +16,7 @@ import es.ucm.fdi.gaia.jcolibri.cbrcore.Connector;
 import es.ucm.fdi.gaia.jcolibri.connector.PlainTextConnector;
 import es.ucm.fdi.gaia.jcolibri.datatypes.Instance;
 import es.ucm.fdi.gaia.jcolibri.exception.ExecutionException;
+import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.local.EnumCyclicDistance;
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.local.EnumDistance;
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.local.Interval;
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.local.ontology.OntCosine;
@@ -69,8 +70,8 @@ public class Gpa implements StandardCBRApplication
 	// Set the average() global similarity function for the description of the case
 	simConfig.setDescriptionSimFunction(new Average());
 	simConfig.addMapping(new Attribute("priorKnowledge", GpaDescription.class), new Equal());
-	simConfig.addMapping(new Attribute("hoursOfWeeklyStudyI", GpaDescription.class), new EnumDistance());
-	simConfig.addMapping(new Attribute("hoursOfWeeklyStudyII", GpaDescription.class), new EnumDistance());
+	simConfig.addMapping(new Attribute("hoursOfWeeklyStudyI", GpaDescription.class), new EnumCyclicDistance());
+	simConfig.addMapping(new Attribute("hoursOfWeeklyStudyII", GpaDescription.class), new EnumCyclicDistance());
 	simConfig.addMapping(new Attribute("interactionWithLecturer", GpaDescription.class), new Equal());
 	simConfig.addMapping(new Attribute("developedProjects", GpaDescription.class), new Equal());
 	simConfig.addMapping(new Attribute("gpaYearI", GpaDescription.class), new InrecaLessIsBetter(4.0,0.1));
@@ -87,11 +88,14 @@ public class Gpa implements StandardCBRApplication
 
 		// Select cases
 		Collection<CBRCase> retrievedCases = SelectCases.selectTopK(eval, 3);
+		Double finalGpa = 0.0;
 
 		// Print the retrieval
 		for (CBRCase nse : retrievedCases) {
 			GpaDescription gpaDescription =  (GpaDescription) nse.getDescription();
+			finalGpa = finalGpa + gpaDescription.getFinalGpa();
 			System.out.println("GPA : " + gpaDescription.getFinalGpa());
+
 			//update final gpa to the db or csv file
 			CSVWriter csvWriter = null;
 			try {

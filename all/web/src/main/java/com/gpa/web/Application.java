@@ -8,6 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration;
 import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
 
@@ -18,7 +20,7 @@ import java.net.InetAddress;
 @ComponentScan({"com.gpa"})
 //@EnableAsync
 @EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class, LiquibaseAutoConfiguration.class, SecurityAutoConfiguration.class})
-public class Application {
+public class Application extends SpringBootServletInitializer {
 
     private static final Logger LOG = LoggerFactory.getLogger(Application.class);
 
@@ -29,5 +31,10 @@ public class Application {
                 InetAddress.getLocalHost().getHostAddress(),
                 environment.getProperty("server.port"),
                 environment.getProperty("server.servlet.context-path"));
+    }
+
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+        return builder.sources(Application.class);
     }
 }

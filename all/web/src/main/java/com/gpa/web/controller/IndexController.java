@@ -139,10 +139,8 @@ public class IndexController {
 
 //get solution GPA from csv file
 
-    Double record1 = 0.0;
-        double record2 = 0.0;
-        double record3 = 0.0;
-        double record;
+    String record1 = "";
+
         try (
                 Reader reader = Files.newBufferedReader(Paths.get(OUT_CSV_FILE_PATH));
                 CSVReader csvReader = new CSVReader(reader);
@@ -150,15 +148,13 @@ public class IndexController {
             // Reading Records One by One in a String array
 
             while ((nextRecord = csvReader.readNext()) != null) {
-                record1 = Double.parseDouble(nextRecord[0]);
-                record2 = Double.parseDouble(nextRecord[1]);
-                record3 = Double.parseDouble(nextRecord[2]);
+                record1 = nextRecord[0];
+
             }
         }
 
-        record = ((record1+record2+record3)/3);
 
-        return Double.toString(record); //to show in the view html
+        return record1; //to show in the view html
 
     }
 
